@@ -156,6 +156,7 @@ li:hover  {
 }
 .item img{
   width: 100%;
+  margin-bottom: -10px;
 }
 .item-info {
   background-color: rgba(255,255,255,.8);   /* 背景半透明 */
@@ -200,3 +201,88 @@ li:hover  {
 
 }
 
+@media screen and (min-width: 1023px){
+  .menu-button{
+    display: none;
+  }
+  .menu-button-checkbox{
+    display: none;
+  }
+
+}
+@media screen and (max-width:1023px){
+  #nav{
+    background-color: rgba(0, 0, 0,0);
+  }
+  .cover{
+    width: 100%;
+    height: 40vh;
+    background-position: 20% 30%;
+    position:static; 
+  }
+  .data-container{
+    width: 100%;
+    overflow-y: visible; 
+    position:static;
+    top: 0;
+    left: 0; 
+    display: block;
+  }
+  #about{
+    padding-top: 10px;
+  }
+  #portfolio{
+    padding-top: 10px;
+  }
+  .menu-button{
+    display: block;
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: #BBB;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+
+  }
+  #menu-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+    opacity: 0;
+  }
+    #menu-button-checkbox:checked ~ .menu {
+    display: block;
+  }
+  .menu{
+    display: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 100%;
+    background-color: rgba(200, 200, 200, .8);
+    transform: none;
+  }
+  .menu li a {
+    color: #FFF;
+  }
+  .item{
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .item-info{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #contact-me{
+    height: 100vh;
+    padding-top: 50px;
+  }
+
+}
